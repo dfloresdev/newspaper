@@ -1,2 +1,33 @@
+@mixin imgHeader {
+  img {
+    height: 100%;
+  }
+}
+
 .containerHeader {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "left left left . center center center center . right right right";
+  height: 100px;
+
+  &--left {
+    height: inherit;
+    grid-area: left;
+
+    @include imgHeader();
+  }
+
+  &--center {
+    height: inherit;
+    grid-area: center;
+    @include imgHeader();
+    text-align: center;
+  }
+
+  &--right {
+    height: inherit;
+    grid-area: right;
+    @include imgHeader();
+    text-align: right;
+  }
 }
