@@ -1,0 +1,41 @@
+@import "../../styles/vars.scss";
+
+.containerSecondCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 3px solid $border;
+  border-top: 3px solid $border;
+  padding: 10px 0px;
+
+  &--leftSide {
+    &__title {
+      p {
+        font-weight: 800;
+        color: black;
+        font-family: $font-large;
+        font-size: 24px;
+      }
+    }
+    &__action {
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      color: black;
+      justify-content: space-between;
+      p {
+        font-weight: 800;
+        font-size: 17px;
+        font-family: $font-large;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &--rightSide {
+    padding-left: 20px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

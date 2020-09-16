@@ -1,0 +1,34 @@
+.containerMainPage {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "header header header header header header header header header header header header "
+    "scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList "
+    "menu menu menu menu menu menu menu menu menu menu menu menu "
+    "leftPanel leftPanel leftPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel rightPanel rightPanel rightPanel";
+  grid-gap: 20px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.scrollList {
+  grid-area: scrollList;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.leftPanel {
+  grid-area: leftPanel;
+}
+
+.centerPanel {
+  grid-area: centerPanel;
+}
+
+.rightPanel {
+  grid-area: rightPanel;
+}

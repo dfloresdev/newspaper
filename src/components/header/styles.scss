@@ -1,6 +1,9 @@
 @mixin imgHeader {
+  display: flex;
+  align-items: center;
   img {
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -9,11 +12,11 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas: "left left left . center center center center . right right right";
   height: 100px;
+  grid-gap: 20px;
 
   &--left {
     height: inherit;
     grid-area: left;
-
     @include imgHeader();
   }
 
@@ -21,13 +24,11 @@
     height: inherit;
     grid-area: center;
     @include imgHeader();
-    text-align: center;
   }
 
   &--right {
     height: inherit;
     grid-area: right;
     @include imgHeader();
-    text-align: right;
   }
 }

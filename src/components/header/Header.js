@@ -1,6 +1,6 @@
 import React from "react";
 import deweys from "../../assets/deweys.png";
-import logo from "../../assets/logo.png";
+import logoNews from "../../assets/logo.png";
 import phone from "../../assets/phone.png";
 import "./styles.scss";
 
@@ -11,7 +11,7 @@ export const Header = () => {
         <img src={deweys} />
       </div>
       <div className="containerHeader--center">
-        <img src={logo} />
+        <img src={logoNews} />
       </div>
       <div className="containerHeader--right">
         <img src={phone} />
