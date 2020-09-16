@@ -1,0 +1,15 @@
+.containerMenu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 800;
+  p {
+    cursor: pointer;
+  }
+}
+
+.styleIcon {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+}
