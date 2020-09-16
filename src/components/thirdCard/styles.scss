@@ -1,0 +1,48 @@
+@import "../../styles/vars.scss";
+
+.containerThirdCard {
+  &--header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 15px;
+
+    &__image {
+      margin-right: 10px;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+      .title {
+        color: black;
+        font-family: $font-large;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 30px;
+        text-transform: capitalize;
+      }
+
+      .date {
+        font-size: 16px;
+        padding: 15px 0px;
+      }
+    }
+  }
+  &--action {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    justify-content: space-between;
+    width: 50%;
+    margin: 15px 0px;
+    p {
+      font-weight: 800;
+      font-size: 17px;
+      font-family: $font-large;
+      text-transform: uppercase;
+    }
+  }
+}

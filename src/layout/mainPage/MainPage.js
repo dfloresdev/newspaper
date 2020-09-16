@@ -3,6 +3,7 @@ import { Header } from "../../components/header/Header";
 import { ScrollList } from "../../components/scrollList/ScrollList";
 import { Menu } from "../../components/menu/Menu";
 import { SecondaryCard } from "../../components/secondaryCard/SecondaryCard";
+import { ThirdCard } from "../../components/thirdCard/ThirdCard";
 import "./styles.scss";
 
 export const MainPage = () => {
@@ -22,7 +23,7 @@ export const MainPage = () => {
           <SecondaryCard />
         </div>
         <div>
-          <p>third card</p>
+          <ThirdCard />
         </div>
         <div>ads</div>
       </div>
