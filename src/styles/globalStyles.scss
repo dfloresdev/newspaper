@@ -1,6 +1,12 @@
 @import "./vars.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;1,400&family=Oswald:wght@300;400;500;600&display=swap");
 
 body {
+  font-family: "Nunito", sans-serif;
   margin: 8px 70px 0px;
   color: $text;
+}
+
+p {
+  margin: 0px;
 }

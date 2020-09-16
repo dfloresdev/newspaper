@@ -1,0 +1,33 @@
+@import "../../styles/vars.scss";
+
+.containerScrollList {
+  width: 100%;
+  border-top: 3px solid $border;
+  border-bottom: 3px solid $border;
+  padding: 3px 0px;
+  margin: 20px 0px;
+  display: flex;
+
+  &--wrapper {
+    background-color: $primary-bg;
+    display: flex;
+    padding: 4px 0px;
+    &__label {
+      display: flex;
+      align-items: center;
+      padding: 0px 15px;
+      color: black;
+      font-weight: 800;
+      border-right: 2px solid black;
+    }
+
+    .rectangle {
+      background-color: $secondary-bg;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: "Oswald", sans-serif;
+      padding: 5px;
+      margin-left: 5px;
+    }
+  }
+}
