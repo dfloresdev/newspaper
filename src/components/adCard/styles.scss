@@ -1,0 +1,34 @@
+@import "../../styles/vars.scss";
+
+.adContainer {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &--image {
+    padding: 10px;
+  }
+
+  &--right {
+    padding: 10px;
+
+    &__img {
+      border-bottom: 2px solid white;
+    }
+
+    &__action {
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      color: $primary-bg;
+      justify-content: space-between;
+      width: 50%;
+      p {
+        font-weight: 800;
+        font-size: 17px;
+        font-family: $font-large;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

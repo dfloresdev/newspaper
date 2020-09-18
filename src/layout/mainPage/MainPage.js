@@ -4,6 +4,7 @@ import { ScrollList } from "../../components/scrollList/ScrollList";
 import { Menu } from "../../components/menu/Menu";
 import { SecondaryCard } from "../../components/secondaryCard/SecondaryCard";
 import { ThirdCard } from "../../components/thirdCard/ThirdCard";
+import { AdCard } from "../../components/adCard/AdCard";
 import "./styles.scss";
 
 export const MainPage = () => {
@@ -25,7 +26,9 @@ export const MainPage = () => {
         <div>
           <ThirdCard />
         </div>
-        <div>ads</div>
+        <div>
+          <AdCard />
+        </div>
       </div>
       <div className="centerPanel">
         <p>center panel</p>
