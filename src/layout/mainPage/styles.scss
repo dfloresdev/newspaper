@@ -1,3 +1,5 @@
+@import "../../styles/vars.scss";
+
 .containerMainPage {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -29,6 +31,8 @@
 
 .centerPanel {
   grid-area: centerPanel;
+  border: 2px solid $border;
+  padding: 10px;
 }
 
 .rightPanel {

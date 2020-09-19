@@ -1,0 +1,112 @@
+@import "../../styles/vars.scss";
+
+.containerCentralCard {
+  display: grid;
+  grid-template-rows: 50% 7% repeat(3, 1fr);
+  height: calc(100%);
+
+  &--image {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &--trending {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-large;
+    &__title {
+      p {
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+    }
+    &__icon {
+      border-radius: 50%;
+      border: 2px solid $border;
+      padding: 2px;
+      width: 30px;
+      height: 30px;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon {
+        padding: 5px;
+        font-size: 20px;
+        background-color: $secondary-bg;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &--title {
+    display: flex;
+    align-items: center;
+    p {
+      font-family: $font-rounded;
+      color: black;
+      font-size: 35px;
+      font-weight: 800;
+      text-transform: capitalize;
+      line-height: 45px;
+    }
+  }
+
+  &--body {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 18px;
+    }
+  }
+
+  &--card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 0px 0px;
+    &__info {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      .info--img {
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .info--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__title {
+          color: black;
+          font-family: $font-large;
+          font-weight: 800;
+          padding: 0px 10px;
+          font-size: 20px;
+        }
+        &__date {
+          padding: 5px 10px;
+        }
+      }
+    }
+    &__controls {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .box {
+        background-color: black;
+        color: white;
+        border: 1px solid $border;
+        font-size: 20px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}

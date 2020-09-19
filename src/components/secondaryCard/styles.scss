@@ -3,8 +3,8 @@
 .containerSecondCard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-bottom: 3px solid $border;
-  border-top: 3px solid $border;
+  border-bottom: 2px solid $border;
+  border-top: 2px solid $border;
   padding: 10px 0px;
 
   &--leftSide {

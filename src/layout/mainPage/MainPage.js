@@ -5,6 +5,7 @@ import { Menu } from "../../components/menu/Menu";
 import { SecondaryCard } from "../../components/secondaryCard/SecondaryCard";
 import { ThirdCard } from "../../components/thirdCard/ThirdCard";
 import { AdCard } from "../../components/adCard/AdCard";
+import { CentralCard } from "../../components/centralCard/CentralCard";
 import "./styles.scss";
 
 export const MainPage = () => {
@@ -31,7 +32,7 @@ export const MainPage = () => {
         </div>
       </div>
       <div className="centerPanel">
-        <p>center panel</p>
+        <CentralCard />
       </div>
       <div className="rightPanel">
         <p>right panel</p>
