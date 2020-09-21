@@ -6,6 +6,9 @@ import { SecondaryCard } from "../../components/secondaryCard/SecondaryCard";
 import { ThirdCard } from "../../components/thirdCard/ThirdCard";
 import { AdCard } from "../../components/adCard/AdCard";
 import { CentralCard } from "../../components/centralCard/CentralCard";
+import { MainCard } from "../../components/rightPanel/mainCard/MainCard";
+import { NewsCard } from "../../components/rightPanel/newsCard/NewsCard";
+import { SubscribeCard } from "../../components/rightPanel/suscribeCard/SubscribeCard";
 import "./styles.scss";
 
 export const MainPage = () => {
@@ -35,7 +38,13 @@ export const MainPage = () => {
         <CentralCard />
       </div>
       <div className="rightPanel">
-        <p>right panel</p>
+        <MainCard />
+        <div className="rightPanel--newsCards">
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+        </div>
+        <SubscribeCard />
       </div>
     </div>
   );

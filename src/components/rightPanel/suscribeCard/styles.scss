@@ -1,0 +1,32 @@
+@import "../../../styles/vars.scss";
+
+.containerSubscribeCard {
+  &--title {
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+  &--email {
+    border: none;
+    width: 100%;
+    border-top: 2px solid $border;
+    border-bottom: 2px solid $border;
+    padding: 10px;
+    font-family: $font-rounded;
+    font-size: inherit;
+    margin: 15px 0px;
+  }
+  &--signmeup {
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-family: $font-large;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+}

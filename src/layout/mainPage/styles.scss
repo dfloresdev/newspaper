@@ -37,4 +37,7 @@
 
 .rightPanel {
   grid-area: rightPanel;
+  &--newsCards {
+    margin: 20px 0px;
+  }
 }
