@@ -9,6 +9,16 @@
     "menu menu menu menu menu menu menu menu menu menu menu menu "
     "leftPanel leftPanel leftPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel rightPanel rightPanel rightPanel";
   grid-gap: 20px;
+
+  @media (max-width: 1200px) {
+    grid-template-areas:
+      "header header header header header header header header header header header header"
+      "scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList scrollList"
+      "menu menu menu menu menu menu menu menu menu menu menu menu"
+      "centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel centerPanel"
+      "leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel leftPanel"
+      "rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel rightPanel";
+  }
 }
 
 .header {
@@ -26,7 +36,28 @@
 .leftPanel {
   grid-area: leftPanel;
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "secondaryCard"
+    "thirdCard"
+    "adCard";
   grid-gap: 15px;
+
+  &--secondaryCard {
+    grid-area: secondaryCard;
+  }
+  &--thirdCard {
+    grid-area: thirdCard;
+  }
+  &--adCard {
+    grid-area: adCard;
+  }
+  @media (min-width: 650px) and(max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "secondaryCard thirdCard"
+      "adCard adCard";
+  }
 }
 
 .centerPanel {

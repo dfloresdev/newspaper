@@ -28,6 +28,29 @@
       outline: none;
       cursor: pointer;
     }
+    @media (min-width: 700px) and (max-width: 1200px) {
+      &__title {
+        font-size: 50px;
+      }
+      &__body {
+        font-size: 45px;
+      }
+      &__button {
+        font-size: 45px;
+      }
+    }
+
+    @media (max-width: 699px) {
+      &__title {
+        font-size: 30px;
+      }
+      &__body {
+        font-size: 25px;
+      }
+      &__button {
+        font-size: 25px;
+      }
+    }
   }
 
   &--img {
@@ -35,7 +58,7 @@
     img {
       float: right;
       margin: -20px;
-      width: calc(100% + 40px);
+      width: calc(100% + 68px);
     }
   }
 }

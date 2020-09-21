@@ -24,13 +24,13 @@ export const MainPage = () => {
         <Menu />
       </div>
       <div className="leftPanel">
-        <div>
+        <div className="leftPanel--secondaryCard">
           <SecondaryCard />
         </div>
-        <div>
+        <div className="leftPanel--thirdCard">
           <ThirdCard />
         </div>
-        <div>
+        <div className="leftPanel--adCard">
           <AdCard />
         </div>
       </div>

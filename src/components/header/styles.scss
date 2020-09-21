@@ -14,6 +14,19 @@
   height: 100px;
   grid-gap: 20px;
 
+  @media (max-width: 850px) {
+    grid-template-areas: "center center center center center center center center center center center center";
+    &--left {
+      display: none !important;
+    }
+    &--right {
+      display: none !important;
+    }
+    &--center {
+      padding-top: 10px;
+    }
+  }
+
   &--left {
     height: inherit;
     grid-area: left;
