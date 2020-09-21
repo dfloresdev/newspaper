@@ -10,6 +10,19 @@
   }
 }
 
+.containerMenuResponsive {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .containerMenu {
+    display: none;
+  }
+  .containerMenuResponsive {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .styleIcon {
   font-size: 25px;
   color: black;
